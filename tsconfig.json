@@ -1,0 +1,26 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@fonts": ["src/assets/fonts/index"],
+      "@images": ["src/assets/images/index"],
+      "@svgs":["src/assets/svgs/index"],
+      "@colors": ["src/constants/index"],
+      "@context": ["src/context/index"],
+      "@components": ["src/components/index"],
+      "@navigation": ["src/navigation/index"],
+      "@screens": ["src/screens/index"],
+      "@services": ["src/services/index"],
+      "@hooks": ["src/hooks/index"], 
+    }
+  },
+  // "files": ["svg.d.ts"],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
