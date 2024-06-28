@@ -21,6 +21,7 @@
     "intl-messageformat": "^10.5.14",
     "metro-react-native-babel-transformer": "^0.77.0",
     "react": "18.2.0",
+    "react-hook-form": "^7.52.0",
     "react-native": "0.74.2",
     "react-native-asset": "^2.1.1",
     "react-native-device-info": "^11.1.0",
@@ -31,7 +32,8 @@
     "react-native-screens": "^3.32.0",
     "react-native-svg": "^15.3.0",
     "react-native-svg-transformer": "^0.20.0",
-    "react-native-vector-icons": "^10.1.0"
+    "react-native-vector-icons": "^10.1.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
