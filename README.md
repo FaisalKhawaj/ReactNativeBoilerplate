@@ -1,7 +1,7 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Taking clone 
-First we need to run this commad with name of project instead of NewProjectName
+In order to clone this project with your ProjectName, you need to run this command with name of your project instead of NewProjectName
 
 ~/dev-scripts/create-new-project.sh NewProjectName
 
