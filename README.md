@@ -2,9 +2,13 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Taking clone 
 
-## . You need to create a script (create-new-project.sh) and write below command in that script file
+## You need to create a script file (create-project.sh)
 
+touch create-project.sh
 
+##  You need to write below lines in that script file(create-project.sh)
+
+```bash
 if [ "$#" -ne 2 ]; then
     echo "Usage: $0 <NewProjectName> <BundleIdentifier>"
     exit 1
@@ -45,8 +49,8 @@ fi
 
 echo "Project $PROJECT_NAME created successfully"
 
-
-___________________
+```
+____________________________________
 
 ## Run the following command to make the script executable:
 chmod +x create-new-project.sh
