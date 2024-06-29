@@ -3,6 +3,8 @@ import {Root} from './src/navigations/root';
 import {getLocales} from 'react-native-localize';
 import {IntlProvider} from '@context';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import {CustomFallback} from '@components';
+import ErrorBoundary from 'react-native-error-boundary';
 
 function App(): React.JSX.Element {
   const [locale, setLocale] = useState('en'); // Default locale is French
@@ -21,9 +23,11 @@ function App(): React.JSX.Element {
   }, []);
   return (
     <GestureHandlerRootView>
-      <IntlProvider locale={locale}>
-        <Root />
-      </IntlProvider>
+      <ErrorBoundary FallbackComponent={CustomFallback}>
+        <IntlProvider locale={locale}>
+          <Root />
+        </IntlProvider>
+      </ErrorBoundary>
     </GestureHandlerRootView>
   );
 }
