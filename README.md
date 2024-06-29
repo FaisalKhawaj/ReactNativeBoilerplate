@@ -4,12 +4,12 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 >**Note**: I had create-project.sh in dev-scripts folder ,so you can create dev-scripts folder and can add create-project.sh in that folder.
 
->**Note**: This is for MacOS users
+
 ## You need to create a script file (create-project.sh)
    ```bash
 touch create-project.sh
 ```
-
+>**Note**: This is for MacOS users
 ##  You need to write below lines in that script file(create-project.sh)
 
 ```bash
