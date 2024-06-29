@@ -3,8 +3,9 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 # Taking clone with your new project name
 
 ## You need to create a script file (create-project.sh)
-
+   ```bash
 touch create-project.sh
+```
 
 ##  You need to write below lines in that script file(create-project.sh)
 
@@ -53,14 +54,17 @@ echo "Project $PROJECT_NAME created successfully"
 ____________________________________
 
 ## Run the following command to make the script executable:
-chmod +x create-new-project.sh
 
+```bash
+chmod +x create-new-project.sh
+```
 
 
 ## In order to clone this boilerplate with your ProjectName and bundle identifier, you need to run this command with name of your project instead of NewProjectName and bundleIdentifer instead of com.test.clone.identifier 
 
-
+```bash
 ~/dev-scripts/create-new-project.sh TestClone com.test.clone.identifier
+```
 
 # Getting Started
 
