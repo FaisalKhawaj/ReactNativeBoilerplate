@@ -1,6 +1,8 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Taking clone with your new project name
+# Making new project from this boilerplate with your new project name and a new bundleIdentifier
+
+>**Note**: I had create-project.sh in dev-scripts folder ,so you can create dev-scripts folder and can add create-project.sh in that folder.
 
 ## You need to create a script file (create-project.sh)
    ```bash
