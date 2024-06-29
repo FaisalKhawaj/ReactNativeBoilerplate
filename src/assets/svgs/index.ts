@@ -11,7 +11,9 @@ export * from './ChevronUpIcon';
 // D
 
 // E
-
+export * from './EmailIcon';
+export * from './EyeCloseIcon';
+export * from './EyeOpenIcon';
 // F
 
 // G

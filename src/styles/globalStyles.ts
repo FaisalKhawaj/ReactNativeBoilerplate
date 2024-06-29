@@ -9,4 +9,8 @@ export const globalStyles = StyleSheet.create({
   headerText: {
     fontFamily: fonts.primary.regular,
   },
+  simpleRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
 });
