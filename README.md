@@ -1,6 +1,6 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Taking clone 
+# Taking clone with your new project name
 
 ## You need to create a script file (create-project.sh)
 
