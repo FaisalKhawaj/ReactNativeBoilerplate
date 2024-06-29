@@ -2,16 +2,6 @@
 
 {
 
-    "onboardingScreen.list1-title":"Find your perfect home !",
-    "onboardingScreen.list1-description":"Filter by furnishig, location, type and price& reach the seller directly !",
-    "onboardingScreen.list2-title":"List your property !",
-    "onboardingScreen.list2-description":"Get verified buyers of your property with an easy to manage dashboard !",
-
-
-    "welcomeScreen.title":"We know what a home is really worth",
-    "welcomeScreen.description":"Register to save properties, get instant alerts and track your home's value .",
-    "welcomeScreen.continue-guest":"Continue as guest",
-
     "signinScreen.header":"Sign in",
     "signinScreen.email-address":"Email address",
     "signinScreen.password":"Password",

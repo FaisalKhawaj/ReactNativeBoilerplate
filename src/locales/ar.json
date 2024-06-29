@@ -1,16 +1,5 @@
 {
 
-
-    "onboardingScreen.list1-title":"ابحث عن منزلك المثالي!",
-    "onboardingScreen.list1-description":"!تصفية حسب الأثاث والموقع والنوع و السعر والوصول إلى البائع مباشرة",
-    "onboardingScreen.list2-title":"!قائمة الممتلكات الخاصة بك",
-    "onboardingScreen.list2-description":" !احصل على المشترين المعتمدين للممتلكات الخاصة بك  مع لوحة تحكم سهلة الإدارة",
-
-
-    "welcomeScreen.title":"نحن نعرف ما أ المنزل يستحق حقا  ",
-    "welcomeScreen.description":"سجل لحفظ العقارات، واحصل على تنبيهات فورية وتتبع قيمة منزلك ",
-    "welcomeScreen.continue-guest":"استمر كضيف",
-
     "signinScreen.header":"تسجيل الدخول",
     "signinScreen.email-address":"عنوان البريد الإلكتروني",
     "signinScreen.password":"عنوان البريد الإلكتروني",
@@ -33,7 +22,6 @@
     "form-errors.passwordLowercase": "يجب أن تحتوي كلمة المرور على حرف صغير واحد على الأقل",
     "form-errors.passwordNumber": "يجب أن تحتوي كلمة المرور على رقم واحد على الأقل",
     "form-errors.passwordSpecial": "يجب أن تحتوي كلمة المرور على حرف خاص واحد على الأقل",
-    
     "form-errors.currentPasswordMin": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل",
     "form-errors.password-not-match":"كلمة المرور غير مطابقة",
     "form-errors.otp-error":"يجب أن يتكون الرمز من 4 أحرف على الأقل",
