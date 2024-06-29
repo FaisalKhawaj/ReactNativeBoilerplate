@@ -2,46 +2,41 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Taking clone 
 
-1. You need to create a script and write below lines (till line ) in that script file
+1. You need to create a script and write below command in that script file
 
-# Check if the correct number of arguments are provided
+
 if [ "$#" -ne 2 ]; then
     echo "Usage: $0 <NewProjectName> <BundleIdentifier>"
     exit 1
 fi
 
-# Assign arguments to variables
 PROJECT_NAME=$1
 BUNDLE_IDENTIFIER=$2
 
 REPO_URL="git@github.com:FaisalKhawaj/ReactNativeBoilerplate.git"
 
-# Clone the boilerplate project
 git clone $REPO_URL $PROJECT_NAME
 
-# Navigate to the newly created project directory
+
 cd $PROJECT_NAME
 
-# Install dependencies
+
 npm install
 
-# Rename the project
+
 npx react-native-rename $PROJECT_NAME -b $BUNDLE_IDENTIFIER
 
-# Check if the rename was successful
+
 if [ $? -ne 0 ]; then
   echo "Failed to rename project"
   exit 1
 fi
 
-
-# Remove existing git history
 rm -rf .git
 git init
 git add .
 git commit -m "Initial commit for $PROJECT_NAME"
 
-# Check if the rename was successful
 if [ $? -ne 0 ]; then
   echo "Failed to rename project"
   exit 1
@@ -51,15 +46,14 @@ fi
 echo "Project $PROJECT_NAME created successfully"
 
 
-_______________________________________
+___________________
 
 # Run the following command to make the script executable:
-
 chmod +x create-new-project.sh
 
 
 
-# In order to clone this boilerplate with your ProjectName and bundle identifier, you need to run this command with name of your project instead of NewProjectName and bundleIdentifer instead of com.test.clone.identifier 
+2.In order to clone this boilerplate with your ProjectName and bundle identifier, you need to run this command with name of your project instead of NewProjectName and bundleIdentifer instead of com.test.clone.identifier 
 
 
 ~/dev-scripts/create-new-project.sh TestClone com.test.clone.identifier
