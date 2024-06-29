@@ -73,8 +73,9 @@ chmod +x create-new-project.sh
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: install packages 
+```bash
 npm install
-
+```
 
 ## Step 2: Start the Metro Server
 
