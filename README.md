@@ -63,10 +63,10 @@ chmod +x create-new-project.sh
 ```
 
 
-## In order to clone this boilerplate with your ProjectName and bundle identifier, you need to run this command with name of your project instead of NewProjectName and bundleIdentifer instead of com.test.clone.identifier 
+## In order to clone this boilerplate with your ProjectName and bundle identifier, you need to run this command with name of your project instead of YourAppName and bundleIdentifer instead of com.your.bundle.identifier
 
 ```bash
-~/dev-scripts/create-new-project.sh TestClone com.test.clone.identifier
+~/dev-scripts/create-new-project.sh YourAppName com.your.bundle.identifier
 ```
 
 # Getting Started
