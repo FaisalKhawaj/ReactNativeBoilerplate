@@ -2,7 +2,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Taking clone 
 
-1. You need to create a script and write below command in that script file
+1.You need to create a script (create-new-project.sh) and write below command in that script file
 
 
 if [ "$#" -ne 2 ]; then
@@ -48,12 +48,12 @@ echo "Project $PROJECT_NAME created successfully"
 
 ___________________
 
-# Run the following command to make the script executable:
+2.Run the following command to make the script executable:
 chmod +x create-new-project.sh
 
 
 
-2.In order to clone this boilerplate with your ProjectName and bundle identifier, you need to run this command with name of your project instead of NewProjectName and bundleIdentifer instead of com.test.clone.identifier 
+3.In order to clone this boilerplate with your ProjectName and bundle identifier, you need to run this command with name of your project instead of NewProjectName and bundleIdentifer instead of com.test.clone.identifier 
 
 
 ~/dev-scripts/create-new-project.sh TestClone com.test.clone.identifier
