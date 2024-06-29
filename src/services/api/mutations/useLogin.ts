@@ -1,6 +1,6 @@
 import {useMutation} from '@tanstack/react-query';
+import {apiUrls} from 'src/services/urls';
 import api from '../api';
-import {apiUrls} from '../urls';
 
 export interface LoginResponse {
   token: string;
