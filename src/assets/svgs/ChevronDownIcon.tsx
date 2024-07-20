@@ -159,7 +159,6 @@ export const ChevronDownIcon = (
   const {width, height} = props;
   return (
     <Svg
-      //   xmlns="http://www.w3.org/2000/svg"
       width={width || 800}
       height={height || 800}
       fill="none"

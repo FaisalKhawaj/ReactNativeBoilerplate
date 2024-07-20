@@ -166,12 +166,7 @@ export const AlertIcon = (
 ) => {
   const {width, height} = props;
   return (
-    <Svg
-      // xmlns="http://www.w3.org/2000/svg"
-      width={width || 58}
-      height={height || 61}
-      fill="none"
-      {...props}>
+    <Svg width={width || 58} height={height || 61} fill="none" {...props}>
       <G filter="url(#a)" opacity="100%">
         <Rect width={width || 58} height={height || 61} fill="url(#b)" rx={0} />
         <Defs>
