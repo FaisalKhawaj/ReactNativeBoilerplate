@@ -4,9 +4,7 @@
     "jsx": "react",
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./*"
-      ],
+      "@globalStyles":["src/styles/globalStyles.ts"],
       "@fonts": ["src/assets/fonts/index"],
       "@images": ["src/assets/images/index"],
       "@svgs":["src/assets/svgs/index"],

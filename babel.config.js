@@ -15,6 +15,7 @@ module.exports = {
           '@navigation': './src/navigation/index',
           '@components': './src/components/index',
           '@screens': './src/screens/index',
+          '@globalStyles': './src/styles/globalStyles.ts',
         },
       },
     ],
