@@ -6,6 +6,10 @@ export const globalStyles = StyleSheet.create({
   screenWrap: {
     backgroundColor: Colors.light.background,
   },
+  safeAreaWrap: {
+    flex: 1,
+    backgroundColor: Colors.light.background,
+  },
   headerText: {
     fontFamily: fonts.primary.regular,
   },

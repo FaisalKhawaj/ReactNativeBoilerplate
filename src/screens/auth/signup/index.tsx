@@ -1,10 +1,11 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {Text} from 'react-native';
+import {SafeAreaWrapper} from 'src/components/templates';
 
 export const Signup = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaWrapper>
       <Text>Signup</Text>
-    </SafeAreaView>
+    </SafeAreaWrapper>
   );
 };

@@ -45,8 +45,9 @@ export const CustomButton = ({
   textButtonWithIcon = false,
   leftIconColor = Colors.light.headingTitle,
 }: ButtonProps) => {
-  const Icon = SVGs[iconName];
-  const LeftIcon = SVGs[iconName];
+  // const Icon = SVGs[iconName];
+  const Icon = SVGs[iconName as keyof typeof SVGs];
+  const LeftIcon = SVGs[iconName as keyof typeof SVGs];
 
   return (
     <>
