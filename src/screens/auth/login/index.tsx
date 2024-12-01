@@ -2,7 +2,7 @@ import React from 'react';
 import {Text} from 'react-native';
 import {useIntl} from '@context';
 import {styles} from './styles';
-import {SafeAreaWrapper} from 'src/components/templates';
+import {SafeAreaWrapper} from '@components';
 
 export const Login = () => {
   const {intl} = useIntl();

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text} from 'react-native';
-import {SafeAreaWrapper} from 'src/components/templates';
+import {SafeAreaWrapper} from '@components';
 
 export const Signup = () => {
   return (
