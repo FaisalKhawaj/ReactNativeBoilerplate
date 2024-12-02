@@ -1,17 +1,18 @@
 import React from 'react';
-import {Text} from 'react-native';
-import {useIntl} from '@context';
+import {CustomButton, SafeAreaWrapper, ThemedText} from '@components';
+import {useTheme} from '@context';
 import {styles} from './styles';
-import {SafeAreaWrapper} from '@components';
 
 export const Login = () => {
-  const {intl} = useIntl();
+  const {colors, toggleTheme} = useTheme();
 
   return (
     <SafeAreaWrapper>
-      <Text style={styles.headingText}>
-        {intl.formatMessage({id: 'signinScreen.header'})}
-      </Text>
+      <ThemedText color={colors.headingTitle} style={styles.headingText}>
+        Login
+      </ThemedText>
+
+      <CustomButton title="ToggleTheme" handleClick={toggleTheme} />
     </SafeAreaWrapper>
   );
 };

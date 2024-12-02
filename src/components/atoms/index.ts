@@ -39,7 +39,7 @@ export * from './CustomTextInput';
 export * from './Spacing';
 
 // T
-
+export * from './ThemedText';
 // U
 
 // V

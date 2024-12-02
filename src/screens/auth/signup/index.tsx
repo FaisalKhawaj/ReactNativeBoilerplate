@@ -1,11 +1,16 @@
 import React from 'react';
-import {Text} from 'react-native';
-import {SafeAreaWrapper} from '@components';
+import {SafeAreaWrapper, ThemedText} from '@components';
+import {useTheme} from '@context';
+import {styles} from './styles';
 
 export const Signup = () => {
+  const {colors} = useTheme();
+
   return (
     <SafeAreaWrapper>
-      <Text>Signup</Text>
+      <ThemedText color={colors.headingTitle} style={styles.headingText}>
+        Signup
+      </ThemedText>
     </SafeAreaWrapper>
   );
 };

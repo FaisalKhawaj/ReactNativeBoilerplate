@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Root} from './src/navigations/root';
 import {getLocales} from 'react-native-localize';
-import {IntlProvider} from '@context';
+import {IntlProvider, ThemeProvider} from '@context';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {CustomFallback} from '@components';
 import ErrorBoundary from 'react-native-error-boundary';
@@ -24,9 +24,11 @@ function App(): React.JSX.Element {
   return (
     <GestureHandlerRootView>
       <ErrorBoundary FallbackComponent={CustomFallback}>
-        <IntlProvider locale={locale}>
-          <Root />
-        </IntlProvider>
+        <ThemeProvider>
+          <IntlProvider locale={locale}>
+            <Root />
+          </IntlProvider>
+        </ThemeProvider>
       </ErrorBoundary>
     </GestureHandlerRootView>
   );
