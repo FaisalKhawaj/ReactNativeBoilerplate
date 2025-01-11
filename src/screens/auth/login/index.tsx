@@ -1,5 +1,5 @@
 import React from 'react';
-import {CustomButton, SafeAreaWrapper, ThemedText} from '@components';
+import {ButtonVariation, CustomButton, SafeAreaWrapper, Spacing, ThemedText} from '@components';
 import {useTheme} from '@context';
 import {styles} from './styles';
 import {RFValue} from 'react-native-responsive-fontsize';
@@ -16,10 +16,24 @@ export const Login = () => {
         style={styles.headingText}>
         Login {translate('login')}
       </ThemedText>
+      <Spacing marginTop={20} />
 
       <CustomButton
         title={translate('toggle_theme')}
         handleClick={toggleTheme}
+      />
+<Spacing marginTop={20} />
+<CustomButton
+        title={translate('toggle_theme')}
+        handleClick={toggleTheme}
+        variation={ButtonVariation.destructive}
+      />
+
+<Spacing marginTop={20} />
+<CustomButton
+        title={translate('toggle_theme')}
+        handleClick={toggleTheme}
+        variation={ButtonVariation.success}
       />
     </SafeAreaWrapper>
   );

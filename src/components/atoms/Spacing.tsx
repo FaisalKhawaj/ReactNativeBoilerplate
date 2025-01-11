@@ -6,10 +6,6 @@ type SpacingProp = {
   marginLeft?: number;
   marginRight?: number;
   marginBottom?: number;
-  top?: number;
-  left?: number;
-  right?: number;
-  bottom?: number;
 };
 
 export const Spacing: React.FC<SpacingProp> = ({
@@ -17,10 +13,7 @@ export const Spacing: React.FC<SpacingProp> = ({
   marginLeft = 0,
   marginRight = 0,
   marginBottom = 0,
-  top = 0,
-  left = 0,
-  right = 0,
-  bottom = 0,
+
 }) => {
   return (
     <View
@@ -29,10 +22,7 @@ export const Spacing: React.FC<SpacingProp> = ({
         marginLeft: marginLeft,
         marginRight: marginRight,
         marginBottom: marginBottom,
-        top: top,
-        left: left,
-        right: right,
-        bottom: bottom,
+
       }}
     />
   );
