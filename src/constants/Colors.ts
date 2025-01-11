@@ -16,3 +16,5 @@ export const Colors = {
     disabled: '#1FE0BA' + 'FF',
   },
 };
+
+export type ThemeColors = typeof Colors.light; // Define a type for theme colors.

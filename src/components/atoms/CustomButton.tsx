@@ -1,8 +1,16 @@
 import React from 'react';
-import {TouchableOpacity, Text, StyleSheet} from 'react-native';
+import {TouchableOpacity, StyleSheet} from 'react-native';
 import {Colors} from '@colors';
 import {fonts} from '../../assets/fonts/index';
 import {useTheme} from '@context';
+import {ThemedText} from './ThemedText';
+
+export enum ButtonVariation {
+  default = 'default',
+  secondary = 'secondary',
+  destructive = 'destructive',
+  success = 'success',
+}
 
 type ButtonProps = {
   title?: string;
@@ -10,10 +18,9 @@ type ButtonProps = {
   textSize?: number;
   textColor?: string | any;
   disabled?: boolean;
-
   btnWidth?: any;
   borderColor?: any;
-
+  variation?: ButtonVariation;
   style?: any;
 };
 
@@ -25,9 +32,14 @@ export const CustomButton = ({
   // btnBg = ,
   btnWidth = '90%',
   borderColor,
+  variation = ButtonVariation.default,
 }: ButtonProps) => {
   // const Icon = SVGs[iconName];
   const {colors} = useTheme();
+  let buttonBackgroundColor = disabled
+    ? colors.disabled
+    : buttonColors[variation];
+
   return (
     <>
       <TouchableOpacity
@@ -38,19 +50,15 @@ export const CustomButton = ({
           {
             borderColor: borderColor ? borderColor : colors.primaryButton,
             width: btnWidth,
-            backgroundColor: disabled ? colors.disabled : colors.primaryButton,
+            backgroundColor: buttonBackgroundColor,
           },
         ]}>
-        <Text
-          style={[
-            styles.textStyle,
-            {
-              color: colors.headingTitle,
-              fontSize: textSize,
-            },
-          ]}>
+        <ThemedText
+          color={colors.headingTitle}
+          fontSize={textSize}
+          style={styles.textStyle}>
           {title}
-        </Text>
+        </ThemedText>
       </TouchableOpacity>
     </>
   );
@@ -58,7 +66,6 @@ export const CustomButton = ({
 
 const styles = StyleSheet.create({
   buttonWrapper: {
-    // paddingHorizontal: 10,
     borderRadius: 5,
     paddingVertical: 13,
     borderWidth: 1,
@@ -99,3 +106,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 });
+
+const buttonColors: {[key in ButtonVariation]: string} = {
+  default: 'blue',
+  secondary: 'pink',
+  destructive: 'red',
+  success: 'green',
+};

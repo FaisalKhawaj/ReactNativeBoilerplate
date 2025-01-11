@@ -9,7 +9,6 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   headingText: {
-    fontSize: 23,
     fontFamily: fonts.primary.bold,
   },
 });

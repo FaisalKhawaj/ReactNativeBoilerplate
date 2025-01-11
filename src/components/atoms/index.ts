@@ -34,12 +34,13 @@ export * from './CustomTextInput';
 // Q
 
 // R
-
+export * from './Row';
 // S
 export * from './Spacing';
 
 // T
 export * from './ThemedText';
+export * from './ThemedView';
 // U
 
 // V

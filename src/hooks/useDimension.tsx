@@ -5,8 +5,8 @@ const width = Math.round(Dimensions.get('window').width);
 const height = Math.round(Dimensions.get('window').height);
 const widthScreen = Math.round(Dimensions.get('screen').width);
 
-const xdHeight = (xdHeight: number) => {
-  const heightPercent = Math.round((xdHeight / 812) * 100);
+const xdHeight = (xdHeightt: number) => {
+  const heightPercent = Math.round((xdHeightt / 812) * 100);
   return PixelRatio.roundToNearestPixel((height * heightPercent) / 100);
 };
 const xdWith = (xdWidth: number) => {

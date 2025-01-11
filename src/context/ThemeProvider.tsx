@@ -1,11 +1,11 @@
-import {Colors} from '@colors';
+import {Colors, ThemeColors} from '@colors';
 import React, {createContext, useContext, useState, useMemo} from 'react';
 
 export type Theme = 'light' | 'dark';
 
 interface ThemeContextProps {
   theme: Theme;
-  colors: typeof Colors.light; // or Colors.dark since they share the same shape
+  colors: ThemeColors; // or Colors.dark since they share the same shape
   toggleTheme: () => void;
 }
 

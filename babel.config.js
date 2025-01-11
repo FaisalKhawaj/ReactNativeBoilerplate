@@ -16,14 +16,8 @@ module.exports = {
           '@components': './src/components/index',
           '@screens': './src/screens/index',
           '@globalStyles': './src/styles/globalStyles.ts',
+          '@locales': './src/locales/i18n',
         },
-      },
-    ],
-    [
-      'formatjs',
-      {
-        idInterpolationPattern: '[sha512:contenthash:base64:6]',
-        ast: true,
       },
     ],
     'react-native-reanimated/plugin',
